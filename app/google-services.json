@@ -1,10 +1,13 @@
 {
-  "web": {
-    "client_id": "561789736402-8trra48q7jkte2go7uh0h2nu7vmj6j5u.apps.googleusercontent.com",
+  "installed": {
+    "client_id": "561789736402-a14455maa6ibqvccaoghggqjar2h7pk4.apps.googleusercontent.com",
     "project_id": "bytridgetest-1540982339063",
     "auth_uri": "https://accounts.google.com/o/oauth2/auth",
     "token_uri": "https://www.googleapis.com/oauth2/v3/token",
     "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-    "client_secret": "NTt-IdmruJsY1dijopN-79mu"
+    "redirect_uris": [
+      "urn:ietf:wg:oauth:2.0:oob",
+      "http://localhost"
+    ]
   }
 }
