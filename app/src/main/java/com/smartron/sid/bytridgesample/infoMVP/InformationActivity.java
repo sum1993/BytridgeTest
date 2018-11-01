@@ -40,8 +40,11 @@ public class InformationActivity extends BaseActivity implements InfoView {
         mHoriontolScrollRecyclerView.setAdapter(horizontolScrollAdapter);
 
         mSwaggeredRecyclerView = findViewById(R.id.swaggered_layout);
+
+        StaggeredGridLayoutManager staggeredGridLayoutManager = new StaggeredGridLayoutManager(3, LinearLayoutManager.VERTICAL);
+        mSwaggeredRecyclerView.setLayoutManager(staggeredGridLayoutManager);
+
         swaggeredScrollAdapter = new SwaggeredScrollAdapter(this);
-        mSwaggeredRecyclerView.setLayoutManager(new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL));
         mSwaggeredRecyclerView.setAdapter(swaggeredScrollAdapter);
 
         mInfoPresenter = new InfoPresenterImpl(this);
